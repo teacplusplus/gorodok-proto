@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @parking.name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @parking.address %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @parking.description %>
+</p>
+
+<p>
+  <b>Price per hour:</b>
+  <%= @parking.price_per_hour %>
+</p>
+
+<p>
+  <b>Day start:</b>
+  <%= @parking.day_start %>
+</p>
+
+<p>
+  <b>Day end:</b>
+  <%= @parking.day_end %>
+</p>
+
+<p>
+  <b>Telephones:</b>
+  <%= @parking.telephones %>
+</p>
+<%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=14&markers=#{@parking.latitude}%2C#{@parking.longitude}" %>
+
+<%= link_to 'Book', new_booking_path(:parking_id => @parking) %> |
+<%= link_to 'Back', parkings_path %>

@@ -1,0 +1,29 @@
+<h1>Listing bookings</h1>
+
+<table>
+  <tr>
+    <th>Parking</th>
+    <th>Code</th>
+    <th>Telephone</th>
+    <th>Start at</th>
+    <th>End at</th>
+    <th>Price</th>
+    <th>Status</th>
+    <th></th>
+  </tr>
+
+<% @bookings.each do |booking| %>
+  <tr>
+    <td><%= booking.parking.name %></td>
+    <td><%= booking.code %></td>
+    <td><%= booking.telephone %></td>
+    <td><%= booking.start_at %></td>
+    <td><%= booking.end_at %></td>
+    <td><%= booking.price %></td>
+    <td><%= booking.status %></td>
+    <td><%= link_to 'Show', booking %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />

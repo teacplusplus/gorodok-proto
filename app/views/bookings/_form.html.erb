@@ -1,0 +1,14 @@
+<%= simple_form_for(@booking) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :parking_id, :input_html =>{:value => params[:parking_id]}, :as => :hidden %>
+    <%= f.input :telephone %>
+    <%= f.input :start_at, :as => :string, :input_html => {:value => 2.hours.since.to_local} %>
+    <%= f.input :end_at, :as => :string, :input_html => {:value => 3.hours.since.to_local} %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

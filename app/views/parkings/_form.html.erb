@@ -1,0 +1,17 @@
+<%= simple_form_for(@parking) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :description %>
+    <%= f.input :price_per_hour %>
+    <%= f.input :day_start %>
+    <%= f.input :day_end %>
+    <%= f.input :telephones %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

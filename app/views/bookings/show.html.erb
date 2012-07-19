@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Parking:</b>
+  <%= @booking.parking.name %>
+</p>
+
+<p>
+  <b>Code:</b>
+  <%= @booking.code %>
+</p>
+
+<p>
+  <b>Telephone:</b>
+  <%= @booking.telephone %>
+</p>
+
+<p>
+  <b>Start at:</b>
+  <%= @booking.start_at %>
+</p>
+
+<p>
+  <b>End at:</b>
+  <%= @booking.end_at %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @booking.price %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @booking.status %>
+</p>
+
+
+<%= link_to 'Back', bookings_path %>

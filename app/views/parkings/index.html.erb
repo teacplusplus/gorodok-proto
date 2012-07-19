@@ -1,0 +1,33 @@
+<h1>Listing parkings</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Description</th>
+    <th>Price per hour</th>
+    <th>Day start</th>
+    <th>Day end</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @parkings.each do |parking| %>
+  <tr>
+    <td><%= parking.name %></td>
+    <td><%= parking.address %></td>
+    <td><%= parking.description %></td>
+    <td><%= parking.price_per_hour %></td>
+    <td><%= parking.day_start %></td>
+    <td><%= parking.day_end %></td>
+    <td><%= link_to 'Show', parking %></td>
+    <td><%= link_to 'Edit', edit_parking_path(parking) %></td>
+    <td><%= link_to 'Destroy', parking, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Parking', new_parking_path %>
