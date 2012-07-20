@@ -7,8 +7,54 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+<div class="overlay">
+</div>
+<div id="site">
+  <div class="logo"><a href="/" title="Перейти на главную страницу"><%=image_tag("logo.png")%></a><%=image_tag("logo_b.png")%></div>
+  <div class="name">он-лайн<br />бронирование<br />парковочных мест</div>
+  <div id="top">
+    <div class="top-l">Поделись с друзьями ссылкой:<a href="#" title="Мы в Twitter"><%=image_tag("ico_tw.png")%></a><a href="#" title="Мы в Facebook"><%=image_tag("ico_fb.png")%></a><a href="#" title="Подпишитесь на RSS-ленту"><%=image_tag("ico_rs.png")%></a><a href="#" title="Мы вКонтакте"><%=image_tag("ico_vk.png")%></a></div>
+    <div class="top-r"><a href="#">Войти / Зарегистрироваться</a></div>
+  </div>
+  <div class="part-btm">
+      <div class="look">
+        <div class="title-l">Результаты поиска</div>
+            <%= yield %>
+      </div>
+  </div>
+  <div id="bottom">
+    <div class="bottom-l"><a href="/" title="Перейти на главную страницу"><%=image_tag("logo_bottom.png")%></a></div>
+    <div class="bottom-r">
+      <div><strong>Заголовок</strong></div>
+      <div><a href="#">Ссылка 1</a></div>
+      <div><a href="#">Ссылка 2</a></div>
+      <div><a href="#">Ссылка 3</a></div>
+    </div>
+    <div class="bottom-r">
+      <div><strong>Заголовок 2</strong></div>
+      <div><a href="#">Ссылка 1</a></div>
+      <div><a href="#">Ссылка 2</a></div>
+      <div><a href="#">Ссылка 3</a></div>
+    </div>
+    <div class="bottom-r">
+      <div><strong>Заголовок 3</strong></div>
+      <div><a href="#">Ссылка 1</a></div>
+      <div><a href="#">Ссылка 2</a></div>
+      <div><a href="#">Ссылка 3</a></div>
+    </div>
+    <div class="bottom-r">
+      <div><strong>Заголовок 4</strong></div>
+      <div><a href="#">Ссылка 1</a></div>
+      <div><a href="#">Ссылка 2</a></div>
+      <div><a href="#">Ссылка 3</a></div>
+    </div>
+    <div class="bottom-r">
+      <div><strong>Заголовок 5</strong></div>
+      <div><a href="#">Ссылка 1</a></div>
+      <div><a href="#">Ссылка 2</a></div>
+      <div><a href="#">Ссылка 3</a></div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
