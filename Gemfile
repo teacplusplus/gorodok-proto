@@ -5,8 +5,6 @@ gem 'rails', '3.1.0'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
-
 gem 'json'
 
 # Gems used only for assets and not required
@@ -42,6 +40,11 @@ gem "guard", :group => :test
 gem "spork", :group => :test
 gem "guard-spork", :group => :test
 gem "guard-rspec", :group => :test
-gem "sqlite3", :group => [:test, :development]
-gem "pg", :group => :production
+group :production, :staging do
+  gem "pg"
+end
+
+group :development, :test do
+  gem "sqlite3-ruby", :require => "sqlite3"
+end
 gem "geocoder"
