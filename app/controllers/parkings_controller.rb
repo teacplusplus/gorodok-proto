@@ -3,6 +3,7 @@ class ParkingsController < ApplicationController
   # GET /parkings.xml
   def index
     @parkings = Parking.search(params[:search], params[:page], params[:day_start], params[:day_end])
+    @json = Parking.all.to_gmaps4rails
     respond_with(@parkings)
   end
 

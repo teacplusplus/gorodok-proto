@@ -1,5 +1,8 @@
-<div class="rc">
+<div class="lc">
+  <div class="part-top"><%= gmaps4rails(@json) %></div>
+</div>
 
+<div class="rc">
   <%= form_tag({:controller => "parkings", :action => "index"}, :method => "get") do%>
       <div class="search">
         <%= text_field_tag('search', 'Введите адрес парковки', :class => 'field-adress', :onfocus=>"this.value=''") %>
@@ -8,12 +11,12 @@
       <div class="dates">
         <div class="date-l">Заезд:</div>
             <div class="date-r">
-              <%= text_field_tag 'day_start', 'Выберите дату', :class => 'date hasDatepicker', :size=>15, :maxlength => 10, :onfocus=>"this.value=''" %><%= select_tag "time_start", "<option value="">и время...</option>".html_safe%>
+              <%= text_field_tag 'day_start', 'Выберите дату', :class => 'date hasDatepicker', :size=>15, :maxlength => 10, :onfocus=>"this.value=''" %><%= select_tag "time_start", "<option value=''>и время...</option>".html_safe%>
             </div>
         <div class="block15">
           <div class="date-l">Выезд:</div>
           <div class="date-r">
-            <%= text_field_tag 'day_end', 'Выберите дату', :class => 'date hasDatepicker', :size=>15, :maxlength => 10, :onfocus=>"this.value=''" %><%= select_tag "time_end", "<option value="">и время...</option>".html_safe%>
+            <%= text_field_tag 'day_end', 'Выберите дату', :class => 'date hasDatepicker', :size=>15, :maxlength => 10, :onfocus=>"this.value=''" %><%= select_tag "time_end", "<option value=''>и время...</option>".html_safe%>
           </div>
         </div>
       </div>

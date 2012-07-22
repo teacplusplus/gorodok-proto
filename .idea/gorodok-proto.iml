@@ -42,6 +42,7 @@
     <orderEntry type="library" scope="PROVIDED" name="factory_girl_rails (v3.5.0, RVM: ruby-1.9.3-p194 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.1.0, RVM: ruby-1.9.3-p194 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="geocoder (v1.1.2, RVM: ruby-1.9.3-p194 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="gmaps4rails (v1.5.2, RVM: ruby-1.9.3-p194 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="guard (v1.2.3, RVM: ruby-1.9.3-p194 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="guard-rspec (v1.2.0, RVM: ruby-1.9.3-p194 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="guard-spork (v1.1.0, RVM: ruby-1.9.3-p194 [global]) [gem]" level="application" />

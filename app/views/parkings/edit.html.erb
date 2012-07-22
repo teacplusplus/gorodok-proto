@@ -4,3 +4,4 @@
 
 <%= link_to 'Show', @parking %> |
 <%= link_to 'Back', parkings_path %>
+<%= link_to "Delete",parking_path(@parking.id), 'method' => :delete, :class => "delete", :confirm => "Are you sure ?"%>

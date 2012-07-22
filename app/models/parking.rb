@@ -1,5 +1,11 @@
 class Parking < ActiveRecord::Base
   geocoded_by :address
+  acts_as_gmappable
+
+  def gmaps4rails_address
+    "#{self.street}, #{self.city}, #{self.country}"
+  end
+
   after_validation :geocode, :if => :address_changed?
   def calculate_price from, to
     return nil if from.hour < day_start || to.hour >= day_end
