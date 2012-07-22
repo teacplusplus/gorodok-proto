@@ -48,3 +48,4 @@ group :development, :test do
   gem "sqlite3-ruby", :require => "sqlite3"
 end
 gem "geocoder"
+gem "will_paginate" ,'~>3.0'

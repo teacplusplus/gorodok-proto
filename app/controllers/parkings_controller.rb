@@ -2,7 +2,7 @@ class ParkingsController < ApplicationController
   # GET /parkings
   # GET /parkings.xml
   def index
-    @parkings = Parking.all
+    @parkings = Parking.search(params[:search], params[:page], params[:day_start], params[:day_end])
     respond_with(@parkings)
   end
 
