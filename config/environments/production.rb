@@ -57,4 +57,10 @@ Parkproto::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+
+  #https://www.google.com/recaptcha/
+
+  ENV['RECAPTCHA_PUBLIC_KEY']  = '6Lfkd9QSAAAAAGI0inPL5KNYOLfLnBU5_k47NT8d'
+  ENV['RECAPTCHA_PRIVATE_KEY'] = '6Lfkd9QSAAAAANonZxYhqzfoRaxa94BLZLRGI95c'
+
 end

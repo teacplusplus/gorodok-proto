@@ -16,4 +16,5 @@ module ParkingsHelper
     end
     a.join("")
   end
+
 end

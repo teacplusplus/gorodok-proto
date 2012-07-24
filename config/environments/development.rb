@@ -30,4 +30,10 @@ Parkproto::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  #https://www.google.com/recaptcha/
+
+  ENV['RECAPTCHA_PUBLIC_KEY']  = '6LcJXdISAAAAAFQz_-kjfZJsa_Lkg_y5FDzxVnfc'
+  ENV['RECAPTCHA_PRIVATE_KEY'] = '6LcJXdISAAAAADabOn6EFGMAx0SXG_J9W2LZLtEp'
+
 end

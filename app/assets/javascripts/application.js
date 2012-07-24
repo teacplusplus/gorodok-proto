@@ -7,3 +7,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(function() {$(".datepicker_edit").datepicker();});
+jQuery(function($) {$(".datepicker_edit").mask("99.99.9999");});
+
+
+

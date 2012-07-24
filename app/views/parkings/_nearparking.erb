@@ -1,0 +1,16 @@
+<div class="rz">
+  <div class="titles">Ближайшие парковки</div>
+  <div class="pop">
+    <% @parkings.each do |parking| %>
+        <div class="pop-l"><%= parking.name %>
+          <br><%= link_to parking.address, :controller => 'parkings', :action => 'index', :search => parking.address, :page => @page,:day_start_ => @day_start,:day_end_ => @day_end,:day_first => @day_first,:day_last => @day_last %>
+        </div>
+        <div class="pop-c"><span class="pop-price"><%= parking.price_per_hour %> р / час</span></div>
+        <div class="pop-r"><%=  link_to 'Бронировать', :controller => 'parkings', :action => 'show', :id => parking.id, :search => @search,:page => @page,:day_start_ => @day_start,:day_end_ => @day_end,:day_first => @day_first,:day_last => @day_last %></div>
+    <% end %>
+  </div>
+
+  <div class="more">
+    <div align="right"><%= link_to 'еще направления', :controller => 'parkings', :action => 'index', :search => @parking.address ,:page => @page,:day_start_ => @day_start,:day_end_ => @day_end,:day_first => @day_first,:day_last => @day_last %><%= image_tag("ico_more.png") %></div>
+  </div>
+</div>

@@ -1,14 +1,40 @@
-<%= simple_form_for(@booking) do |f| %>
-  <%= f.error_notification %>
+<div class="overlay" style="height: 2500px; width: 2500px; display: block; "></div>
+<div class="overlay-gl">
+  <table class="overlay-in">
+    <tbody>
+    <tr>
+      <td>
+        <%= simple_form_for(@booking) do |f| %>
+            <%= f.error_notification %>
 
-  <div class="inputs">
-    <%= f.input :parking_id, :input_html =>{:value => params[:parking_id]}, :as => :hidden %>
-    <%= f.input :telephone %>
-    <%= f.input :start_at, :as => :string, :input_html => {:value => 2.hours.since.to_local} %>
-    <%= f.input :end_at, :as => :string, :input_html => {:value => 3.hours.since.to_local} %>
-  </div>
+            <div class="overlay-bl">
+              <div class="overlay-cl"><%=image_tag "but_close.png", :id =>"but-close" , :title =>  "Закрыть" %></div>
+              <div class="overlay-h1"><%=@parking.name%></div>
+              <div class="overlay-cn">
+                <%= f.input :parking_id, :input_html =>{:value => @parking.id}, :as => :hidden %>
+                <%= f.input :start_at, :as => :string, :input_html => {:value => @day_start}, :as => :hidden %>
+                <%= f.input :end_at, :as => :string, :input_html => {:value => @day_end}, :as => :hidden %>
+                <div class="overlay-l">Адрес:</div>
+                <div class="overlay-r" id="value-adress"><%= @parking.address%></div>
+                <div class="overlay-l">Дата и время:</div>
+                <div class="overlay-r" id="value-date"><%=@day_first%> <%=@day_start%> - <%=@day_last%> <%=@day_end%></div>
+                <div class="overlay-l">Сумма</div>
+                <div class="overlay-r" id="value-sum"><%=@parking.calculate_price(@day_start,@day_end)%> руб.</div>
+                <div class="overlay-ph">Введите номер телефона, мы отправим вам подтверждение брони.
+                  <div class="block"><%= f.input :telephone %></div>
+                </div>
+                <div class="overlay-ph">Введите код с картинки
+                  <div class="block"><%= recaptcha_tags :ajax => true %></div>
+                </div>
+                <div class="overlay-ag"><%= f.check_box :terms %>Я согласен с условиями
+                  <a href="#" target="_blank">пользовательского соглашения</a></div>
+                <div class="overlay-bt" align="center"><%= f.button :submit, :value => "Бронировать" %></div>
+              </div>
+            </div>
+        <% end %>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
 
-  <div class="actions">
-    <%= f.button :submit %>
-  </div>
-<% end %>

@@ -42,4 +42,10 @@ Parkproto::Application.configure do
 
   # Allow pass debug_assets=true as a query parameter to load pages with unpackaged assets
   config.assets.allow_debugging = true
+
+  #https://www.google.com/recaptcha/
+
+  ENV['RECAPTCHA_PUBLIC_KEY']  = '6LcJXdISAAAAAFQz_-kjfZJsa_Lkg_y5FDzxVnfc'
+  ENV['RECAPTCHA_PRIVATE_KEY'] = '6LcJXdISAAAAADabOn6EFGMAx0SXG_J9W2LZLtEp'
+
 end

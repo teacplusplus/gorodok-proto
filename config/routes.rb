@@ -1,6 +1,6 @@
 Parkproto::Application.routes.draw do
 
-  resources :bookings, :only => [:index, :new, :create, :show] do 
+  resources :bookings, :only => [:index, :new, :create, :show] do
     post 'confirm', :on => :collection, :as => 'confirm_booking'
   end
 

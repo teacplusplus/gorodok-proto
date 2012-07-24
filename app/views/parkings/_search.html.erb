@@ -7,12 +7,12 @@
       <div class="dates">
         <div class="date-l">Заезд:</div>
         <div class="date-r">
-          <%= text_field_tag 'day_first', @day_first, :placeholder =>'Выберите дату', :class => 'date hasDatepicker', :size=>15, :maxlength => 10%><%= select_tag "data_start", select_tag_24_option(@data_start).html_safe%>
+          <%= text_field_tag 'day_first', @day_first, :placeholder =>'Выберите дату', :class => 'datepicker_edit', :size=>15, :maxlength => 10%><%= select_tag "data_start_", select_tag_24_option(@data_start).html_safe%>
         </div>
         <div class="block15">
           <div class="date-l">Выезд:</div>
           <div class="date-r">
-            <%= text_field_tag 'day_last', @day_last, :placeholder =>'Выберите дату', :class => 'date hasDatepicker', :size=>15, :maxlength => 10%><%= select_tag "data_end", select_tag_24_option(@data_end).html_safe  %>
+            <%= text_field_tag 'day_last', @day_last, :placeholder =>'Выберите дату', :class => 'datepicker_edit', :size=>15, :maxlength => 10%><%= select_tag "data_end_", select_tag_24_option(@data_end).html_safe  %>
           </div>
         </div>
       </div>

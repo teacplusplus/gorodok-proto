@@ -50,3 +50,5 @@ end
 gem "geocoder"
 gem "will_paginate" ,'~>3.0'
 gem "gmaps4rails"
+gem "rmagick"
+gem "recaptcha"

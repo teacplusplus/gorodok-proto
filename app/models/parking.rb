@@ -8,6 +8,7 @@ class Parking < ActiveRecord::Base
 
   after_validation :geocode, :if => :address_changed?
   def calculate_price from, to
+    return nil if from.blank? or to.blank?
     return nil if from.hour < day_start || to.hour >= day_end
     return price_per_hour * DateTime.total_hours(from, to); 
   end

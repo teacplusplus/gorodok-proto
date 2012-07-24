@@ -16,7 +16,7 @@
                 <div class="result-w"><%= parking.day_start %>-<%= parking.day_end %></div>
                 <div class="result-c"><%= parking.price_per_hour %> р / час</div>
                 <div class="result-e"><%= link_to 'Редактировать',edit_parking_path(parking)%></div>
-                <div class="result-r"><%= link_to 'Бронировать', parking_path(parking) %></div>
+                <div class="result-r"><%= link_to 'Бронировать', :controller => 'parkings', :action => 'show', :id => parking.id, :search => @search, :page => @page, :day_start_ => @day_start,:day_end_ => @day_end,:day_first => @day_first,:day_last => @day_last %></div>
               </div>
         <% end %>
       <div class="more">
@@ -25,3 +25,4 @@
     </div>
   </div>
 </div>
+

@@ -1,1 +1,7 @@
-$('#overlay_').html("<%=escape_javascript render "form" %>");
+$('#overlay').html("<%=escape_javascript render "form" %>");
+$('#overlay').fadeIn(500, function() {
+        $(".overlay-ph input").mask("(999)-999-99-99");
+        $(".overlay-ph input").focus();
+        });
+
+

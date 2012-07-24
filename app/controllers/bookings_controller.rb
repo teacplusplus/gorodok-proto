@@ -36,18 +36,22 @@ class BookingsController < ApplicationController
   # GET /bookings/new
   # GET /bookings/new.xml
   def new
+    save_params
     @booking = Booking.new
-    respond_with(@booking)
+    @parking = Parking.find(params[:parking_id])
+    @booking.parking=@parking;
+    respond_with(@booking) do |format|
+        format.js
+    end
   end
 
   # POST /bookings
   # POST /bookings.xml
   def create
+    save_params
     @booking = Booking.build(params[:booking])
-    SmsGate.send %{Code "#{@booking.code}"
-Time: #{@booking.start_at.to_local} - #{@booking.end_at.to_local}}, @booking.telephone
     @booking.save
-    respond_with(@booking)
+    redirect_to :back
   end
 
   # GET /bookings/1/edit
@@ -69,5 +73,15 @@ Time: #{@booking.start_at.to_local} - #{@booking.end_at.to_local}}, @booking.tel
     @booking = Booking.find(params[:id])
     @booking.destroy
     respond_with(@booking)
+  end
+
+  private
+  def save_params
+    @search = params["search"]
+    @page = params["page"]
+    @day_start = params["day_start_"]
+    @day_end = params["day_end"]
+    @day_first = params["day_first"]
+    @day_last = params["day_last"]
   end
 end
