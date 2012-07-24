@@ -14,14 +14,21 @@ class Parking < ActiveRecord::Base
 
   def self.search(search, page, day_start, day_end)
 
-    con=[];
+    str_con=[];
 
-    if !(day_start.blank?) and !(day_end.blank?)
-      con = ['day_start >= ?  AND day_end <=?', "%#{day_start}%", "%#{day_end}%"]
-    else
-      con= ['day_start >= ?', "%#{day_start}%"] unless day_start.blank?
-      con= ['day_end <= ?', "%#{day_end}%"] unless day_end.blank?
-    end
+
+    str_con<<'day_start >= ?'  unless day_start.blank?
+
+    str_con<<'day_end >= ?' unless day_end.blank?
+
+    con=[]
+
+    con<<str_con.join(' AND ');
+
+    con<<"%#{day_start}"  unless day_start.blank?
+
+    con<<"%#{day_end}" unless day_start.blank?
+
 
     if search.blank?
       paginate :per_page => 5, :page => page,
@@ -35,7 +42,12 @@ class Parking < ActiveRecord::Base
                                  :order => 'name'
 
     end
+  end
 
+  def self.search_near_parking_limit_3(search,page)
 
+    parking_near_list = near(search, 50, :order => :distance)
+    parking_near_list.paginate :per_page => 3, :page => page,
+                                :order => 'name'
   end
 end

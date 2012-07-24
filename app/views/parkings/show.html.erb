@@ -1,40 +1,37 @@
-<p id="notice"><%= notice %></p>
+<%= render ("map") %>
+<%= render ("search") %>
 
-<p>
-  <b>Name:</b>
-  <%= @parking.name %>
-</p>
+<div class="part-btm">
+  <div class="lz">
+    <div class="look">
+      <div class="title-l"><%= @parking.name %></div>
+      <div class="title-r"><%= @parking.price_per_hour %> р / час</div>
+      <div class="adress"><%= @parking.address %></div>
+      <div class="params"><span><%= image_tag("ico_time.png") %><%= @parking.day_start %>-<%= @parking.day_end %></span><span><%= image_tag("ico_roof.png") %><%= @parking.description %></span><span><%= image_tag("ico_phone.png") %><%= @parking.telephones %>
+        ></span></div>
+      <%= form_tag({:controller => "parkings", :action => "show"}, :method => "get",:remote => true) do %>
+          <div class="block15"><%= image_tag "ico_car.png", :class => "img", :style => "margin-right:8px" %><%= text_field_tag 'day_first', @day_first, :placeholder => 'Выберите дату', :class => 'date hasDatepicker', :size => 15, :maxlength => 10 %><%= select_tag "data_start", select_tag_24_option(@data_start).html_safe %><%= text_field_tag 'day_last', @day_last, :placeholder => 'Выберите дату', :class => 'date hasDatepicker', :size => 15, :maxlength => 10, :style => "margin-right:8px;" %><%= select_tag "data_end", select_tag_24_option(@data_end).html_safe %><%= image_tag "ico_car.png", :class => "img" %></div>
+          <div class="block25"><%= image_tag "ico_back.png", :class => "img" %><%= link_to 'Вернуться к результатам поиска', :back, :class => "back" %>
+            <%= hidden_field_tag 'new_booking', 'true'%>
+            <%= submit_tag("Бронировать") %>
+          </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="rz">
+    <div class="titles">Ближайшие парковки</div>
+    <div class="pop">
+      <% @parkings.each do |parking| %>
+          <div class="pop-l"><%= parking.name %>
+            <br><%= link_to parking.address, :controller => 'parkings', :action => 'index', :search => parking.address %>
+          </div>
+          <div class="pop-c"><span class="pop-price"><%= parking.price_per_hour %> р / час</span></div>
+          <div class="pop-r"><%= link_to 'Бронировать', parking %></div>
+      <% end %>
+    </div>
 
-<p>
-  <b>Address:</b>
-  <%= @parking.address %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @parking.description %>
-</p>
-
-<p>
-  <b>Price per hour:</b>
-  <%= @parking.price_per_hour %>
-</p>
-
-<p>
-  <b>Day start:</b>
-  <%= @parking.day_start %>
-</p>
-
-<p>
-  <b>Day end:</b>
-  <%= @parking.day_end %>
-</p>
-
-<p>
-  <b>Telephones:</b>
-  <%= @parking.telephones %>
-</p>
-<%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=14&markers=#{@parking.latitude}%2C#{@parking.longitude}" %>
-
-<%= link_to 'Book', new_booking_path(:parking_id => @parking) %> |
-<%= link_to 'Back', parkings_path %>
+    <div class="more">
+      <div align="right"><%= link_to 'еще направления', :controller => 'parkings', :action => 'index', :search => @parking.address %><%= image_tag("ico_more.png") %></div>
+    </div>
+  </div>
+</div>

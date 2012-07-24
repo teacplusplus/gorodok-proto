@@ -10,7 +10,6 @@ class CreateParkings < ActiveRecord::Migration
       t.integer :day_start
       t.integer :day_end
       t.text :telephones
-
       t.timestamps
     end
   end

@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9962cdac-e168-497a-92eb-49e9c21ad88e" name="Default" comment="Base">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gorodok-proto.iml" afterPath="$PROJECT_DIR$/.idea/gorodok-proto.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/parkings/_map.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/parkings/_newbooking.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/parkings/_search.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/parkings/show.js.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/parkings_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/parkings_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/parkings_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/parkings_helper.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/parking.rb" afterPath="$PROJECT_DIR$/app/models/parking.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/parkings/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/parkings/edit.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/parkings/index.html.erb" afterPath="$PROJECT_DIR$/app/views/parkings/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/parkings/show.html.erb" afterPath="$PROJECT_DIR$/app/views/parkings/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20111108161247_create_parkings.rb" afterPath="$PROJECT_DIR$/db/migrate/20111108161247_create_parkings.rb" />
     </list>
     <ignored path="gorodok-proto.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,28 +34,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/parkings/index.html.erb">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/parkings/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="38" selection-start="1837" selection-end="1894" vertical-scroll-proportion="-24.375">
+            <state line="14" column="34" selection-start="1488" selection-end="1499" vertical-scroll-proportion="-2.1818182">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <file leaf-file-name="parkings_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/parkings_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="6" selection-start="2127" selection-end="2127" vertical-scroll-proportion="0.7986111">
+            <state line="22" column="0" selection-start="612" selection-end="612" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/parkings/edit.html.erb">
+      <file leaf-file-name="_search.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/parkings/_search.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="48" selection-start="167" selection-end="167" vertical-scroll-proportion="-3.75">
+            <state line="3" column="39" selection-start="170" selection-end="170" vertical-scroll-proportion="-1.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_newbooking.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/parkings/_newbooking.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="39" selection-start="259" selection-end="259" vertical-scroll-proportion="-4.375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.js.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/parkings/show.js.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="23" selection-start="23" selection-end="23" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rendering_helper.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.1.0/lib/action_view/helpers/rendering_helper.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="0" selection-start="1210" selection-end="1210" vertical-scroll-proportion="0.33255813">
               <folding />
             </state>
           </provider>
@@ -86,22 +113,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
-        <option value="$PROJECT_DIR$/config/application.rb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/jquery.ui.datepicker-ru.js" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/overlay.js" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/slider.js" />
-        <option value="$PROJECT_DIR$/script/my_script.rb" />
-        <option value="$PROJECT_DIR$/script/add_parks.rb" />
-        <option value="$PROJECT_DIR$/db/schema.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/models/parking.rb" />
-        <option value="$PROJECT_DIR$/app/views/parkings/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/parkings_controller.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/gmaps4rails.css" />
         <option value="$PROJECT_DIR$/app/views/bookings/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/parkings/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/parkings/_map.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/parkings/search.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/application/home.html.erb" />
+        <option value="$PROJECT_DIR$/db/schema.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20111108161247_create_parkings.rb" />
+        <option value="$PROJECT_DIR$/app/helpers/parkings_helper.rb" />
+        <option value="$PROJECT_DIR$/app/views/parkings/_newbooking.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/parkings/show.js.erb" />
+        <option value="$PROJECT_DIR$/app/views/parkings/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/parkings/_search.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/parking.rb" />
+        <option value="$PROJECT_DIR$/app/views/parkings/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/parkings_controller.rb" />
       </list>
     </option>
   </component>
@@ -113,10 +140,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="64" />
-    <option name="y" value="-4" />
-    <option name="width" value="1601" />
-    <option name="height" value="935" />
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="1599" />
+    <option name="height" value="906" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -154,6 +181,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -297,6 +325,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gorodok-proto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gorodok-proto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -466,26 +512,83 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gorodok-proto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gorodok-proto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gorodok-proto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gorodok-proto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gorodok-proto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gorodok-proto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../facebook_auth" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -494,6 +597,9 @@
       <recent name="$PROJECT_DIR$/app/assets/imeges" />
       <recent name="$PROJECT_DIR$/app/assets/img" />
       <recent name="$PROJECT_DIR$/config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/parkings" />
     </key>
   </component>
   <component name="RunManager" selected="Rails.Development: gorodok-proto">
@@ -885,29 +991,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-4" width="1601" height="935" extended-state="6" />
+    <frame x="65" y="24" width="1599" height="906" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5597015" sideWeight="0.48741123" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.49774048" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.49774048" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27049708" sideWeight="0.619403" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39925373" sideWeight="0.49774048" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26920593" sideWeight="0.6007463" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39925373" sideWeight="0.48482892" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38059703" sideWeight="0.47320852" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38059703" sideWeight="0.5222724" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39925373" sideWeight="0.510652" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38557214" sideWeight="0.49903163" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.49774048" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Heroku" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.46933505" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.49515817" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.49257585" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.47191736" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.47191736" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -961,17 +1067,26 @@
     <MESSAGE value="Base" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/parkings_controller.rb</url>
+          <line>20</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/parkings_controller.rb</url>
+          <line>22</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/views/parkings/show.js.erb</url>
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/images/map.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/gmaps4rails.css">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.1.0/lib/action_controller/metal/mime_responds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="14" selection-start="433" selection-end="433" vertical-scroll-proportion="0.67164177">
+        <state line="226" column="74" selection-start="7883" selection-end="8046" vertical-scroll-proportion="0.8063063">
           <folding />
         </state>
       </provider>
@@ -983,93 +1098,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/bookings/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/bookings/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="119" selection-end="119" vertical-scroll-proportion="-3.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="4" selection-start="1295" selection-end="1295" vertical-scroll-proportion="0.93932587">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/parkings_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="241" selection-end="241" vertical-scroll-proportion="0.20930232">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.1.0/lib/action_view/helpers/url_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="230" column="10" selection-start="10851" selection-end="10851" vertical-scroll-proportion="0.9611399">
+        <state line="230" column="10" selection-start="10851" selection-end="10851" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/parking.rb">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="32" selection-start="281" selection-end="281" vertical-scroll-proportion="0.24418604">
+        <state line="6" column="2" selection-start="180" selection-end="180" vertical-scroll-proportion="0.19354838">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/parkings/_form.html.erb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.1.0/lib/action_view/helpers/form_tag_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="4" selection-start="341" selection-end="364" vertical-scroll-proportion="0.51724136">
+        <state line="196" column="10" selection-start="10324" selection-end="10374" vertical-scroll-proportion="0.35971224">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/bookings/new.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/parkings/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/bookings/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.5697674">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/bookings/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/parkings/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="48" selection-start="167" selection-end="167" vertical-scroll-proportion="-3.75">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/parkings/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="38" selection-start="1837" selection-end="1894" vertical-scroll-proportion="-24.375">
+        <state line="12" column="85" selection-start="342" selection-end="342" vertical-scroll-proportion="0.44334975">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/parking.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="6" selection-start="2127" selection-end="2127" vertical-scroll-proportion="0.7986111">
+        <state line="13" column="0" selection-start="378" selection-end="378" vertical-scroll-proportion="0.45348838">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/parkings/_map.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/parkings/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/parkings/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="34" selection-start="1488" selection-end="1499" vertical-scroll-proportion="-2.1818182">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/parkings/_search.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="39" selection-start="170" selection-end="170" vertical-scroll-proportion="-1.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/parkings/_newbooking.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="39" selection-start="259" selection-end="259" vertical-scroll-proportion="-4.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/parkings_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="612" selection-end="612" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/parkings/show.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="23" selection-start="23" selection-end="23" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.1.0/lib/action_view/helpers/rendering_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="1210" selection-end="1210" vertical-scroll-proportion="0.33255813">
           <folding />
         </state>
       </provider>
